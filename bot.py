@@ -20,8 +20,6 @@ async def on_message(message):
     if moment.hour >= 2 or moment.hour <= 5:
         await message.channel.send('It\'s time for beddy byes, {}, you need your beauty sleep <3. \nhttps://i.pinimg.com/originals/de/f3/2b/def32b29236bebf71e878e4bab16f278.jpg'.format(message.author.name))
 
-TOKEN = os.getenv('token')
-
 @bot.command()
 async def load(ctx, extension):
     bot.load_extension(f'cogs.{extension}')
@@ -49,6 +47,5 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         bot.load_extension(f'cogs.{filename[:-3]}')
 
-
-
+TOKEN = os.getenv('token')
 bot.run(TOKEN)
