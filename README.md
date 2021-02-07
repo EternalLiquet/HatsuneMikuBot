@@ -8,8 +8,7 @@ Discord Bot based off of Hatsune Miku, written in python!
 
 - Install dependencies:
 
-  - discord.py
-  - python-dotenv
+  pip install -r requirements.txt
 
 - Create .env file:
 
