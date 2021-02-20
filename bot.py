@@ -28,7 +28,7 @@ async def on_message(message):
         await message.channel.send("Nice")
 
     if message.author.name == "Durithill" and (moment.hour >= 9 or moment.hour <= 17):
-        await message.channel.send('Get a job, {}.'.format(message.author.name))
+        await message.channel.send('Get a job, Matt.')
 
 
 @bot.command()
