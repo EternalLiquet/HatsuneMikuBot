@@ -27,6 +27,9 @@ async def on_message(message):
     if "69" in message.content.lower():
         await message.channel.send("Nice")
 
+    if message.author.name == "Durithill" and (moment.hour >= 9 or moment.hour <= 17):
+        await message.channel.send('Get a job, {}.'.format(message.author.name))
+
 
 @bot.command()
 async def load(ctx, extension):
